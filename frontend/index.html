@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Чат поддержки</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Чат поддержки</h1>
+    <div id="auth-section">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Пароль" />
+      <button id="login-btn">Войти</button>
+      <button id="register-btn">Зарегистрироваться</button>
+    </div>
+
+    <div id="chat-section" style="display:none;">
+      <div id="chat-box" class="chat-box"></div>
+      <div class="input-area">
+        <input type="text" id="message-input" placeholder="Введите сообщение..." />
+        <button id="send-btn">Отправить</button>
+        <button id="clear-btn">Очистить</button>
+      </div>
+      <div id="typing" class="typing-indicator" style="display:none;">Бот печатает...</div>
+    </div>
+  </div>
+  <script type="module" src="js/chat.js"></script>
+</body>
+</html>
